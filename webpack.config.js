@@ -1,13 +1,13 @@
-const path = require('path');
+const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  "mode": "none",
-  "entry": "./src/index.js",
-  "output": {
-    "path": path.join(__dirname, "/dist"),
-    "filename": "[name].js",
-    sourceMapFilename: "[file].map[query]"
+  mode: "none",
+  entry: "./src/index.js",
+  output: {
+    path: path.join(__dirname, "/dist"),
+    filename: "[name].js",
+    sourceMapFilename: "[file].map[query]",
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -15,14 +15,14 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: path.join(__dirname, 'dist')
+    static: path.join(__dirname, "dist"),
   },
-  "devtool": "source-map",
-  "module": {
-    "rules": [
+  devtool: "source-map",
+  module: {
+    rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: "ts-loader",
         exclude: /node_modules/,
       },
       {
@@ -40,23 +40,23 @@ module.exports = {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: '[name].[ext]',
-              outputPath: 'images/',
-              publicPath: 'images/'
-            }
-          }
-        ]
+              name: "[name].[ext]",
+              outputPath: "images/",
+              publicPath: "images/",
+            },
+          },
+        ],
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/, // to import images and fonts
         loader: "url-loader",
         options: { limit: false },
       },
-    ]
+    ],
   },
-  "resolve": {
-    extensions: ['.tsx', '.ts', '.js'],
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
   },
 };
