@@ -21,6 +21,11 @@ module.exports = {
   "module": {
     "rules": [
       {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
         test: /\.(js|jsx)$/, // .js and .jsx files
         exclude: /node_modules/, // excluding the node_modules folder
         use: {
@@ -50,5 +55,8 @@ module.exports = {
         options: { limit: false },
       },
     ]
-  }
+  },
+  "resolve": {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
 };
