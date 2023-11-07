@@ -7,7 +7,7 @@ module.exports = {
   "output": {
     "path": path.join(__dirname, "/dist"),
     "filename": "[name].js",
-    sourceMapFilename: "bundle.js.map"
+    sourceMapFilename: "[file].map[query]"
   },
   plugins: [
     new HtmlWebpackPlugin({
