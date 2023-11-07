@@ -1,6 +1,10 @@
-import ReactDOM from "react-dom";
+/* eslint-disable no-unused-vars */
+import React from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App";
 import "./App.scss";
 
 const el = document.getElementById("app");
 
-ReactDOM.render(<App />, el);
+const root = createRoot(el);
+root.render(<App />);

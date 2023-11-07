@@ -5,7 +5,11 @@
     "es6": true,
     "mocha": true
   },
-  "extends": ["eslint:recommended","plugin:jsx-a11y/recommended","plugin:prettier/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:jsx-a11y/strict",
+    "plugin:prettier/recommended"
+  ],
   "parserOptions": { "sourceType": "module" },
   "rules": {
     "eqeqeq": ["error", "always"],
@@ -20,7 +24,10 @@
     "max-len": ["warn", 80],
     "new-cap": ["error", { "newIsCap": true }],
     "object-shorthand": ["error", "always"],
-    "space-before-blocks": ["error", { "functions": "always", "keywords": "always", "classes": "always" }],
+    "space-before-blocks": [
+      "error",
+      { "functions": "always", "keywords": "always", "classes": "always" }
+    ],
     "space-infix-ops": ["error", { "int32Hint": false }]
   },
   "plugins": ["jsx-a11y", "react", "prettier"]
