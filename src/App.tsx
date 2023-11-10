@@ -1,13 +1,19 @@
 import * as React from "react";
 const App = () => {
   return (
-    <>
+    <div>
       <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/blog">Blog</a>
+        <ul className="nav-list">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>About</li>
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
+        </ul>
       </nav>
-    </>
+    </div>
   );
 };
 
