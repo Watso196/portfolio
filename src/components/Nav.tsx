@@ -11,6 +11,7 @@ const Nav = () => {
           <Link to={"/blog"}>Blog</Link>
         </li>
       </ul>
+      <button type="button">Light mode/dark mode</button>
     </nav>
   );
 };
