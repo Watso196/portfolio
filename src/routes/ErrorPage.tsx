@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useRouteError, isRouteErrorResponse } from "react-router-dom";
+import Nav from "../components/Nav";
 
 const ErrorPage = () => {
   const error = useRouteError();
@@ -10,11 +11,14 @@ const ErrorPage = () => {
   }
 
   return (
-    <div id="error-page">
-      <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
-      <p>{errorMessage}</p>
-    </div>
+    <>
+      <Nav />
+      <div id="error-page">
+        <h1>Oops!</h1>
+        <p>Sorry, an unexpected error has occurred.</p>
+        <p>{errorMessage}</p>
+      </div>
+    </>
   );
 };
 

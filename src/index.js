@@ -2,7 +2,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App";
 import Home from "./routes/Home";
 import Blog from "./routes/Blog";
 import ErrorPage from "./routes/ErrorPage";
@@ -24,4 +23,9 @@ const router = createBrowserRouter([
 ]);
 
 const root = createRoot(el);
-root.render(<RouterProvider router={router} />);
+root.render(
+  <>
+    <RouterProvider router={router} />
+    {/*eslint-disable-next-line prettier/prettier*/}
+  </>
+);
