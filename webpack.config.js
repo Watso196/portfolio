@@ -8,6 +8,7 @@ module.exports = {
     path: path.join(__dirname, "/dist"),
     filename: "[name].js",
     sourceMapFilename: "[file].map[query]",
+    publicPath: "/",
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -16,6 +17,7 @@ module.exports = {
   ],
   devServer: {
     static: path.join(__dirname, "dist"),
+    historyApiFallback: true, // to enable react-router-dom
   },
   devtool: "source-map",
   module: {
