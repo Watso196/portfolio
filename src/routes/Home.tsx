@@ -22,6 +22,22 @@ const Home = () => {
           <li></li>
         </ul>
       </div>
+      <div id="projects">
+        <h2>Projects</h2>
+        <ul id="project-list">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <p>Link to CodePen for more small examples</p>
+        <p>Link to Github for code history</p>
+      </div>
+      <div id="about">
+        <h2>About Kalib</h2>
+        <p>Some short info about myself</p>
+        <p>Link to LinkedIn</p>
+      </div>
     </>
   );
 };

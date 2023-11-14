@@ -12,6 +12,7 @@ const Nav = () => {
         </li>
       </ul>
       <button type="button">Light mode/dark mode</button>
+      <button type="button">Clean fonts/stylized fonts</button>
     </nav>
   );
 };
