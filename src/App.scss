@@ -20,3 +20,21 @@ h5 {
 a {
   color: #dacff8;
 }
+
+.switch {
+  #on-state {
+    display: none;
+  }
+  #off-state {
+    display: block;
+  }
+
+  &.on {
+    #on-state {
+      display: block;
+    }
+    #off-state {
+      display: none;
+    }
+  }
+}
