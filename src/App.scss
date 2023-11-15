@@ -38,3 +38,25 @@ a {
     }
   }
 }
+
+/* Light Mode Styles */
+.light-mode {
+  background-color: #f4f1fd;
+  color: #323342;
+
+  a {
+    color: #323342;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: #323342;
+
+    a {
+      color: #323342;
+    }
+  }
+}

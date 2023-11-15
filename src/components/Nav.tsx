@@ -17,6 +17,7 @@ const Nav = () => {
         id="light-dark-switch"
         onChange={() => {
           console.log("mode switch change");
+          document.querySelector("body")?.classList.toggle("light-mode");
         }}
       />
       <SwitchControl
